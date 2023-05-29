@@ -1,0 +1,143 @@
+body{
+    margin: 0px;
+    background-color: #efefef;
+    font-family: "Open Sans";
+}
+
+.header{
+    display: flex;
+    padding: 20px;
+    margin: 0px;
+    background-color: #43281c;
+    color: #fbf2c0;
+    
+    font-size: larger;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    height: 30px;
+    margin-right: 5px;
+}
+
+.order-items{
+    display: grid;
+    grid-template-areas: 
+    "items payment-info"
+    "order-info order-info";
+    margin: 10px;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.items{
+    grid-area: items;
+    padding: 15px;
+    background-color: #eee1d5;
+    color: #885a2d;
+    border-radius: 5px;
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.order-items p{
+    font-weight: lighter;
+    font-size: x-small;
+    justify-content: left;
+    padding-left: 25px;
+    margin: 0px;
+}
+
+.order-items h4{
+    color: black;
+    font-weight: normal;
+    text-align: justify;
+    margin: 10px;
+}
+
+.payment-info{
+    grid-area: payment-info;
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    background-color: #eee1d5;
+    padding:20px;
+    margin: 15px;
+    color: #885a2d;
+    border-radius: 5px;
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font-size: small;
+}
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    background-color: #eee1d5;
+    padding: 20px;
+    margin: 15px;
+    color: #885a2d;
+    border-radius: 5px;
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font-size: small;
+}
+
+.order-info{
+    grid-area: order-info;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+p{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: justify;
+}
+
+input{
+    border: 2px #885a2d solid;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: #eee1d5;
+    width: 100%;
+    -webkit-appearance: none;
+}
+
+.order-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: #deb993;
+    border: 0px;
+    border-radius: 25px;
+    padding: 10px;
+    width: 95%;
+}
+
+.input-group{
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+}
+
+label{
+    background-color: #eee1d5;
+    color: #885a2d;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+}
